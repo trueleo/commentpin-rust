@@ -1,4 +1,4 @@
 libc6
 libcairo2
 libpango-1.0-0
-freetype2
+libfreetype6
