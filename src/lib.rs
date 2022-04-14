@@ -38,7 +38,7 @@ pub async fn command_handler(context: Arc<Command>) {
 
             if member.is_some() {
                 if  Generator::generate(message).is_some() {
-                    let file = fs::read("static/render.png").unwrap();
+                    let file = fs::read("tmp/render.png").unwrap();
                     let input = input_file::Photo::with_bytes(file).caption(
                         {
                             let name = match from_user.username {
